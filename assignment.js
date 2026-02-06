@@ -73,7 +73,7 @@ const fizzBuzzList = document.querySelector("#fizzbuzz-list"); // Selecting the 
 if (fizzBuzzButton && fizzBuzzList) { // Checking if both fizzBuzzButton and fizzBuzzList exist (i.e., they are not null or undefined) before adding an event listener to the button
     fizzBuzzButton.addEventListener("click", () => { // Adding a click event listener to the fizzBuzzButton. When the button is clicked, the function inside the event listener will be executed.
         fizzBuzzList.innerHTML = ""; // Clearing the existing content of the fizzBuzzList (if any) by setting its innerHTML to an empty string. This ensures that each time the button is clicked, the list will be refreshed with new FizzBuzz results. (ai helped with this part I was not sure how to clear the list before adding new items to it)
-
+                                    // last part made sense after doing the w3schools tutorial https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
         for (let i = 1; i <= 100; i += 1) { // Loop from 1 to 100 and increment by 1
             let label = String(i); //labeling the string i
 
